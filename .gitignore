@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+dist/
+build/
+.env
+.env.*
+
+# Ruby
+/log/
+/tmp/
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system/
+/coverage/
+/.bundle/
+/vendor/bundle
+.byebug_history
+
+# Playwright
+/test-results/
+/playwright-report/
+
+# General
+.DS_Store
+*.log
+
+# Playwright
+/blob-report/
+/playwright/.cache/
