@@ -17,12 +17,12 @@ Create the folder structure of a monorepo for a backoffice system for Moart, a b
 - Folder structure follows Domain Driven Design (DDD): business logic in `models`, feature-scoped, logic close to usage
 - Auth0 for authentication and authorization (Role Based Access Control)
 - Auth0 configuration variables (domain, client ID, etc.) should be read from environment variables
-- Use latest Node.js version
+- Use Node.js 23.11.0
 - Use `dotenv` for environment variable management
 
 ## Backend (`apps/server`)
 - Ruby on Rails in API mode
-- Use latest Ruby and Rails versions
+- Use Ruby version 3.2 or newer and Rails version 8.0.0 or newer
 - PostgreSQL as the database
 - Rubocop for linting and styling
 - Use `dotenv` for environment variable management
