@@ -24,7 +24,8 @@
 - Use pagination (e.g., `kaminari` or `pagy`).
 - Only create models and migrations for: `CustomerOrder`, `OrderLine`, `OrderValueAdjustment`, and their minimal required associations (e.g., `Customer`, `Organization`, `Product` if needed for foreign keys).
 - Do not scaffold unnecessary models or endpoints.
-- Use RSpec for any tests (if tests are to be written).
+- **Write all migrations using Rails migration DSL, not raw SQL.**
+- **Do not write any tests for this feature.**
 - Use environment variables for any sensitive configuration.
 
 ---
