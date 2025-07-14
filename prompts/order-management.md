@@ -25,6 +25,7 @@
 - Only create models and migrations for: `CustomerOrder`, `OrderLine`, `OrderValueAdjustment`, and their minimal required associations (e.g., `Customer`, `Organization`, `Product` if needed for foreign keys).
 - Do not scaffold unnecessary models or endpoints.
 - **Write all migrations using Rails migration DSL, not raw SQL.**
+- **Use the `money-rails` gem to handle all monetary values in models and migrations.**
 - **Do not write any tests for this feature.**
 - Use environment variables for any sensitive configuration.
 

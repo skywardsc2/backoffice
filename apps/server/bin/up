@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Spin up PostgreSQL container for local development
+set -e
+cd "$(dirname "$0")"
+docker compose up -d
+echo "PostgreSQL container is running."

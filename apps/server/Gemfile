@@ -44,4 +44,18 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Fake data generation for testing and development
+  gem "faker"
+
+  # Annotate Rails classes with schema and routes info
+  gem "annotaterb"
 end
+
+gem "kaminari", "~> 1.2"
+
+gem "active_model_serializers", "~> 0.10.15"
+
+gem "dotenv-rails", "~> 3.1"
+
+gem "money-rails", "~> 1.15"

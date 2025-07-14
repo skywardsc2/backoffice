@@ -17,7 +17,8 @@ CREATE TABLE "OrderLine"(
     "id" BIGINT NOT NULL,
     "product_id" BIGINT NOT NULL,
     "quantity" BIGINT NOT NULL,
-    "unit_price" DECIMAL(8, 2) NOT NULL,
+    "unit_price_cents" BIGINT NOT NULL,
+    "unit_price_currency" VARCHAR(3) NOT NULL,
     "customer_order_id" BIGINT NOT NULL
 );
 ALTER TABLE
@@ -25,7 +26,8 @@ ALTER TABLE
 CREATE TABLE "OrderValueAdjustment"(
     "id" BIGINT NOT NULL,
     "description" TEXT NOT NULL,
-    "value" DECIMAL(8, 2) NOT NULL,
+    "value_cents" BIGINT NOT NULL,
+    "value_currency" VARCHAR(3) NOT NULL,
     "customer_order_id" BIGINT NOT NULL
 );
 ALTER TABLE
@@ -89,7 +91,8 @@ ALTER TABLE
 CREATE TABLE "Product"(
     "id" BIGINT NOT NULL,
     "name" TEXT NOT NULL,
-    "default_unit_price" DECIMAL(8, 2) NOT NULL
+    "default_unit_price_cents" BIGINT NOT NULL,
+    "default_unit_price_currency" VARCHAR(3) NOT NULL
 );
 ALTER TABLE
     "Product" ADD PRIMARY KEY("id");

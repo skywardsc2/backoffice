@@ -1,0 +1,14 @@
+# Ruby
+/log/
+/tmp/
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system/
+/coverage/
+.bundle/
+/vendor/bundle
+.byebug_history
+
+# General
+.DS_Store
+*.log

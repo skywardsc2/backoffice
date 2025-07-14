@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev:server": "cd apps/server && bin/up",
+    "dev:client": "cd apps/client && pnpm dev"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
